@@ -28,4 +28,10 @@ public class LeapYearTest {
         LeapYear ly = new LeapYear();
         Assertions.assertFalse(ly.isLeapYear(2017));
     }
+
+    @Test
+    public void negativeYears() {
+        LeapYear ly = new LeapYear();
+        Assertions.assertFalse(ly.isLeapYear(-2016));
+    }
 }
