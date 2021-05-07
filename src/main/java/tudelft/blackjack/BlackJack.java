@@ -9,9 +9,6 @@ public class BlackJack {
             ln = 0;
         if(rn > 21)
             rn = 0;
-        if(ln > rn)
-            return ln;
-        else
-            return rn;
+        return Math.max(ln,rn);
     }
 }
